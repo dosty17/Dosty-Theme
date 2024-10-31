@@ -36,6 +36,8 @@ import 'file_name.g.dart';
 class MyTheme extends _$MyTheme {
 }
 ```
+after run `dart run build_runner build` or `dart run build_runner watch`
+
 
 2. **Define Your Colors**
     Create a list of colors using the DostyColor class, specifying the light and dark variants.
