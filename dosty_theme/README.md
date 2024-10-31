@@ -1,7 +1,7 @@
 # Dosty Theme Management
 
 <p align="center">
-<img width="75%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/67322273/381881836-6bfc5cc7-4691-4890-b542-fd561efda740.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241031%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241031T083727Z&X-Amz-Expires=300&X-Amz-Signature=da03f76c665c3739de9ee84407126fb1b65b2281c2244c21adaa16a7208b0989&X-Amz-SignedHeaders=host">
+<img width="75%" src="https://i.pinimg.com/1200x/40/c9/2b/40c92bfeec60fbf4c8f0b6bd13bd4e7b.jpg">
 </p>
 
 <hr>
