@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.2] - 2024-10-31
+### Changed
+- Improved README to enhance clarity and usability.
+- Added more detailed usage examples and explanations.
+
 ## [0.0.1] - 2024-10-31
 ### Added
 - Initial release of `dosty_theme` package.
