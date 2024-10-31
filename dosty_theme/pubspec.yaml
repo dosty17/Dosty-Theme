@@ -1,7 +1,7 @@
 name: dosty_theme
 description: "Theme management package for Flutter with light and dark mode support."
 version: 0.0.1
-homepage: https://github.com/dosty17/Dosty-Theme/dosty_theme
+homepage: https://github.com/dosty17/Dosty-Theme/tree/main/dosty_theme
 
 environment:
   sdk: ^3.5.3
