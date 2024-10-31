@@ -1,7 +1,7 @@
 name: dosty_theme_annotation
 description: "Annotations for creating and managing theme color variables in Flutter applications."
 version: 0.0.1
-homepage: https://github.com/dosty17/Dosty-Theme/dosty_theme_annotation
+homepage: https://github.com/dosty17/Dosty-Theme/tree/main/dosty_theme_annotation
 
 environment:
   sdk: ^3.5.3
