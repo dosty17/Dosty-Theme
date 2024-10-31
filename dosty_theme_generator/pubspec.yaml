@@ -1,0 +1,22 @@
+name: dosty_theme_generator
+description: "A code generation package for creating theme color variables in Flutter."
+version: 0.0.1
+homepage: https://github.com/dosty17/Dosty-Theme/dosty_theme_generator
+
+environment:
+  sdk: ^3.5.3
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  build: ^2.4.1
+  source_gen: ^1.5.0
+  dosty_theme_annotation: ^1.0.0
+  dosty_theme: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.13

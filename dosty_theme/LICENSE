@@ -1,0 +1,10 @@
+
+### `CHANGELOG.md`
+
+```markdown
+# Changelog
+
+## [0.0.1] - 2024-10-29
+- Initial release of `dosty_theme`.
+- Integrated `DostyColor` configuration for light and dark themes.
+- Supports theme mode switching and variable generation for theme colors.
