@@ -17,13 +17,14 @@
 
 ## Installation
 
-To install the Dosty Theme package, use the following command in your terminal:
+To install the Dosty Theme package, run the following commands in your terminal:
 
-run ```flutter pub add dosty_theme```
-
-then run ```flutter pub add dosty_theme_annotation```
-
-and run ```dart pub add dosty_theme_generator```
+```bash
+flutter pub add dosty_theme
+flutter pub add dosty_theme_annotation
+dart pub add dosty_theme_generator
+dart pub add dev:build_runner
+```
 
 ## Usage
 
@@ -137,17 +138,40 @@ class MyApp extends StatelessWidget {
   
 
 
-6. **Using Your Theme Colors**
-You can now use your defined colors throughout your app:
-```
-Container(
-  width: 100,
-  height: 100,
-  decoration: BoxDecoration(color: myTheme.color3),
-  child: Text('Example'),
-);
+6. **Using Your custom Colors**
+You can now use your defined colors throughout your app, but need wrap with DostyThemeBuilder like below code:<br>
+A- if you want to use for all widgets of a class, wrap scaffold with DostyThemeBuilder like that:
 
 ```
+  mytheme.DostyThemeBuilder(
+    builder: (theme, context) {
+      return Scaffold(
+        //add your code
+      );
+    },
+  );
+```
+and use colors through `theme` for example: `theme.color3;`
+<br>
+<br>
+B-you can wrap just some widgets:
+
+```
+ mytheme.DostyThemeBuilder(
+    builder: (theme, context) {
+      return Container(
+        width: 100,
+        height: 100,
+        decoration: BoxDecoration(color: theme.grey3),
+        child: const Text('example'),
+      );
+    },
+  );
+```
+<br>
+<span style="color:goldenrod">Warning:</span> once the theme changes, all widgets that are in DostyThemeBuilder will be refreshed.
+<br>
+<br>
 For a shorter method of accessing some colors within ThemeData:
 
 ```
@@ -170,6 +194,27 @@ Switch(
   },
 );
 
+```
+
+8. **How to set custom font?**
+```
+myTh.DostyTheme(
+  context: context,
+  materialApp: MaterialApp(
+    title: 'Dosty',
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: myTheme.main),
+      scaffoldBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
+      useMaterial3: true,
+      fontFamily: 'kurdish',
+    ),
+    darkTheme: ThemeData.dark().copyWith(
+      colorScheme: ColorScheme.fromSeed(seedColor: myTheme.main),
+      scaffoldBackgroundColor: const Color(0xff111015),
+      textTheme: ThemeData.dark().textTheme.apply(fontFamily: 'kurdish'),
+    ),
+    home: const BottomNavigation(),
+  ));
 ```
 
 ## Variables
@@ -203,7 +248,14 @@ Switch(
 | `primaryColorDark(context)`             | Access the primary dark color                    |
 | `primaryColorLight(context)`            | Access the primary light color                   |
 
+
+<br>
+<img src="https://visitcount.itsvg.in/api?id=dosty17&label=Visitor&color=12&icon=5&pretty=true" />
+<br>
+
 ## Links:
 [documentattion](https://fersaz.com/flutter/dosty_theme)\
 [youtube](https://www.youtube.com/playlist?list=PLwY2YLEPF3yAeT3r_Pdak7DO0PQbvzN_g)\
 [facebook](https://www.facebook.com/dosty.pshtiwan18)
+
+

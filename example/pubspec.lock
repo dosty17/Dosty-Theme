@@ -185,26 +185,23 @@ packages:
   dosty_theme:
     dependency: "direct main"
     description:
-      name: dosty_theme
-      sha256: "4d4bae3201154544633e65902b70ad72a4096f2aa186b59b3c9ced648253bc33"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.1"
+      path: "../dosty_theme"
+      relative: true
+    source: path
+    version: "0.0.2"
   dosty_theme_annotation:
     dependency: "direct main"
     description:
-      name: dosty_theme_annotation
-      sha256: c1ef937a4eb4dd1b050dc904aadf26585ec4fd249de14533300e871a0bcc24e5
-      url: "https://pub.dev"
-    source: hosted
+      path: "../dosty_theme_annotation"
+      relative: true
+    source: path
     version: "0.0.1"
   dosty_theme_generator:
     dependency: "direct dev"
     description:
-      name: dosty_theme_generator
-      sha256: "8009c3cd52838418821696d197c259c7162ab2f9b0a204e42772457c4927fdab"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../dosty_theme_generator"
+      relative: true
+    source: path
     version: "0.0.1"
   fake_async:
     dependency: transitive

@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
 
+/// Represents a theme color with light and dark variations.
 class DostyColor {
-  late String name;
-  late Color dark;
-  late Color light;
-  DostyColor({required this.name, required this.light, required this.dark});
+  /// The name of the color.
+  final String name;
+
+  /// The light variant of the color.
+  final Color light;
+
+  /// The dark variant of the color.
+  final Color dark;
+
+  /// Creates a [DostyColor] with specified light and dark colors.
+  const DostyColor({
+    required this.name,
+    required this.light,
+    required this.dark,
+  });
+
+  /// Converts the color into a map format with `light` and `dark` keys.
   Map<String, Color> toMap() {
-    return {
-      'light': light,
-      'dark': dark,
-    };
+    return <String, Color>{'light': light, 'dark': dark};
   }
 }

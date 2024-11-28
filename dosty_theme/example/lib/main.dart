@@ -66,17 +66,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 mytheme.toggle();
               },
             ),
-            Container(
-              width: 100,
-              height: 100,
-              decoration: BoxDecoration(color: mytheme.color3),
-              child: Text('example'),
-            ),
+            TextButton(
+                onPressed: () {
+                  // mytheme.toLight();
+                  // mytheme.toSystem(context);
+                  mytheme.adanceToggle(context: context, mode: ThemeMode.light);
+                },
+                child: const Text('data')),
+            TextButton(
+                onPressed: () {
+                  mytheme.toDark();
+                },
+                child: const Text('data')),
+            mytheme.DostyThemeBuilder(
+              builder: (theme, context) {
+                return Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(color: theme.grey3),
+                  child: const Text('example'),
+                );
+              },
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: mytheme.color3,
+        backgroundColor: Colors.amber,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),

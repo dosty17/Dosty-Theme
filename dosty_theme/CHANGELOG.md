@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.3] - 2024-11-28
+### Changed
+- added DostyThemeBuilder for work with custom colors
+- improved documentation
+
+
 ## [0.0.2] - 2024-10-31
 ### Changed
 - Improved README to enhance clarity and usability.
