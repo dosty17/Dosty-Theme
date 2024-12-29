@@ -252,6 +252,7 @@ myTh.DostyTheme(
 <br>
 <img src="https://visitcount.itsvg.in/api?id=dosty17&label=Visitor&color=12&icon=5&pretty=true" />
 <br>
+![Visitor Counter](http://dosty.rf.gd/update_counter.php)
 
 ## Links:
 [documentattion](https://fersaz.com/flutter/dosty_theme)\
